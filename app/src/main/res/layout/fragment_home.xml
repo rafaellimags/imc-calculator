@@ -5,7 +5,7 @@
     android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home" >
+    tools:context=".Home">
 
     <TextView
         android:id="@+id/textView5"
@@ -14,6 +14,8 @@
         android:layout_marginStart="36dp"
         android:layout_marginTop="108dp"
         android:text="Peso"
+        android:textColor="#7d97f4"
+        android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -21,11 +23,12 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
         android:layout_marginTop="16dp"
         android:text="Altura"
+        android:textColor="#7d97f4"
+        android:textStyle="bold"
         android:translationZ="90dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mass" />
 
@@ -35,6 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="4dp"
+        android:backgroundTint="#7d97f4"
         android:ems="10"
         android:inputType="textPersonName"
         android:translationZ="90dp"
@@ -47,6 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="36dp"
         android:layout_marginTop="4dp"
+        android:backgroundTint="#7d97f4"
         android:ems="10"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,10 +61,27 @@
         android:id="@+id/btnCalcBMI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#4d4df9"
         android:text="Calculate BMI"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="343dp"
+        android:layout_height="308dp"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="7dp"
+        android:backgroundTint="#4d4df9"
+        android:src="@drawable/woman_gym_home_cp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCalcBMI"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/height"
+        app:layout_constraintVertical_bias="0.364" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
