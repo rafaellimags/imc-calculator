@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/initial">
+    <fragment
+        android:id="@+id/mildThinness"
+        android:name="com.example.imc_calculator_tp5_pb.MildThinness"
+        android:label="fragment_mild_thinness"
+        tools:layout="@layout/fragment_mild_thinness" />
+    <fragment
+        android:id="@+id/moderateThinness"
+        android:name="com.example.imc_calculator_tp5_pb.ModerateThinness"
+        android:label="fragment_moderate_thinness"
+        tools:layout="@layout/fragment_moderate_thinness" />
+    <fragment
+        android:id="@+id/normal"
+        android:name="com.example.imc_calculator_tp5_pb.Normal"
+        android:label="fragment_normal"
+        tools:layout="@layout/fragment_normal" />
+    <fragment
+        android:id="@+id/obeseClassOne"
+        android:name="com.example.imc_calculator_tp5_pb.ObeseClassOne"
+        android:label="fragment_obese_class_one"
+        tools:layout="@layout/fragment_obese_class_one" />
+    <fragment
+        android:id="@+id/obeseClassThree"
+        android:name="com.example.imc_calculator_tp5_pb.ObeseClassThree"
+        android:label="fragment_obese_class_three"
+        tools:layout="@layout/fragment_obese_class_three" />
+    <fragment
+        android:id="@+id/obeseClassTwo"
+        android:name="com.example.imc_calculator_tp5_pb.ObeseClassTwo"
+        android:label="fragment_obese_class_two"
+        tools:layout="@layout/fragment_obese_class_two" />
+    <fragment
+        android:id="@+id/overweight"
+        android:name="com.example.imc_calculator_tp5_pb.Overweight"
+        android:label="fragment_overweight"
+        tools:layout="@layout/fragment_overweight" />
+    <fragment
+        android:id="@+id/severeThinness"
+        android:name="com.example.imc_calculator_tp5_pb.SevereThinness"
+        android:label="fragment_severe_thinness"
+        tools:layout="@layout/fragment_severe_thinness" />
+    <fragment
+        android:id="@+id/initial"
+        android:name="com.example.imc_calculator_tp5_pb.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_initial_to_mildThinness"
+            app:destination="@id/mildThinness" />
+        <action
+            android:id="@+id/action_initial_to_obeseClassThree"
+            app:destination="@id/obeseClassThree" />
+        <action
+            android:id="@+id/action_initial_to_moderateThinness"
+            app:destination="@id/moderateThinness" />
+        <action
+            android:id="@+id/action_initial_to_obeseClassTwo"
+            app:destination="@id/obeseClassTwo" />
+        <action
+            android:id="@+id/action_initial_to_normal"
+            app:destination="@id/normal" />
+        <action
+            android:id="@+id/action_initial_to_overweight"
+            app:destination="@id/overweight" />
+        <action
+            android:id="@+id/action_initial_to_obeseClassOne"
+            app:destination="@id/obeseClassOne" />
+        <action
+            android:id="@+id/action_initial_to_severeThinness"
+            app:destination="@id/severeThinness" />
+    </fragment>
+</navigation>
